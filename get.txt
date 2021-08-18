@@ -1,0 +1,32 @@
+GET /NutriNET/Cliente HTTP/1.1
+HTTP/1.1 200 ok
+Content-type:application/vnd.api+json
+{
+
+"data": [{
+		"type":"clientes",
+		"id": "1"
+		"attributes": {
+			"clienteID":"1",
+			"Nombre_Usuario": "Juan145",
+			"Contraseña": "4848ZDR.8",
+			"Nombre":"Juan Pablo",
+			"Apellidos":"Perez Fernandez",
+			"Correo_Electronico": "JuanPe.74@gmail.com",
+			"Edad": 22,
+			"Estatura":1.79,
+			"Peso": 78.5,
+			"IMC":26,
+			"GEB":15,
+			"ETA":22,
+			"Fecha_Creacion":"2021-08-16T18:30:00Z",
+			"Fecha_Actualizacion:"2021-08-16T20:18:05Z"
+		
+	}],
+	"included":[{
+		"type": "clientes",
+		"clienteID": 1
+	
+		}
+	]
+}

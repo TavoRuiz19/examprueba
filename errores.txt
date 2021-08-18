@@ -1,0 +1,73 @@
+HTTP/1.1 422 Unprocessable Entity
+Content-Type: application/vnd.api+json
+
+{
+  "errors": [
+    {
+      "status": "-1",
+      "source": { "pointer": "/data/attributes/nombre_usuario" },
+      "title":  "Invalid Attribute",
+      "detail": "El nombre debe contener al menos tres caracteres.."
+    },
+     {
+      "status": "-2",
+      "source": { "pointer": "/data/attributes/contraseña" },
+      "detail": "El nombre debe contener al menos tres caracteres alfanumericos."
+    },
+    {
+      "status": "-3",
+      "source": { "pointer": "/data/attributes/nombre" },
+      "detail": "El nombre debe contener al menos tres caracteres."
+    },
+    {
+      "status": "-4",
+      "source": { "pointer": "/data/attributes/apellidos" },
+      "detail": "Los apellidos debe contener al menos tres caracteres."
+    },
+    {
+      "status": "-5",
+      "source": { "pointer": "/data/attributes/correo_electronico" },
+      "detail": "El emai debe contener al menos tres caracteres y un @."
+    },
+    {
+      "status": "-6",
+      "source": { "pointer": "/data/attributes/edad" },
+      "detail": "La edad debe ser un numero entero"
+    },
+    {
+      "status": "-7",
+      "source": { "pointer": "/data/attributes/estatura" },
+      "detail": "La estatura de ser un numero real."
+    },
+    {
+      "status": "-8",
+      "source": { "pointer": "/data/attributes/peso" },
+      "detail": "El peso debe ser un numero real valido."
+    },
+    {
+      "status": "-9",
+      "source": { "pointer": "/data/attributes/IMC" },
+      "detail": "El IMC debe ser valido
+    },
+    {
+      "status": "-10",
+      "source": { "pointer": "/data/attributes/GEB" },
+      "detail": "La GEB debe ser un numero real valido."
+    },
+    {
+      "status": "-11",
+      "source": { "pointer": "/data/attributes/ETA" },
+      "detail": "EL ETA debe ser un numero real."
+    },
+{
+      "status": "-12",
+      "source": { "pointer": "/data/attributes/Fecha_Creacion" },
+      "detail": "La Fecha_Creacion debe ser en el formato AA/MM/DD ."
+    },
+    {
+      "status": "-13",
+      "source": { "pointer": "/data/attributes/Fecha_Actualizacion" },
+      "detail": "La Fecha_Actualizacion debe ser en el formato AA/MM/DD ."
+    }
+  ]
+}
